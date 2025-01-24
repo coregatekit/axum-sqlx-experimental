@@ -1,9 +1,0 @@
--- Add up migration script here
-CREATE TABLE IF NOT EXISTS stocks (
-    id CHAR(36) PRIMARY KEY NOT NULL,
-    product_id CHAR(36) NOT NULL,
-    quantity INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (product_id) REFERENCES products (id) ON DELETE CASCADE
-);
