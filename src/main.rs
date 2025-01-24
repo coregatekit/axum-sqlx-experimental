@@ -1,6 +1,12 @@
-mod routings;
+mod commons;
+mod configs;
+mod handlers;
+mod models;
+mod routes;
+mod services;
+mod utils;
 
-use routings::routers::create_router;
+use crate::routes::routers::create_router;
 
 #[tokio::main]
 async fn main() {
